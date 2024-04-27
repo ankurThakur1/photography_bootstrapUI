@@ -30,10 +30,3 @@ const removeModal = () => {
 }
 
 
-   // const modalImage = document.createElement("img");
-    // console.log(modalImage);
-    // modalImage.src = imageSrc;
-    // modal.innerHTML = "";
-    // modal.appendChild(modalImage);
-    // // console.log(image);
-    // modal.classList.add("show-modal");
