@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="photography.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg pt-4 ps-0 pe-0 pb-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand flex-grow-1 text-light" href="#">ANKURPHOTO.COM</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Portfolio
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Contact</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+              </nav>
+        </div>
+        <div class="hero">
+            <div id="carouselFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-item" data-bs-interval="false">
+                    <img src="./assets/pic-1.jpg" class="d-block w-100 c-img" alt="slide 1">
+                  </div>
+                  <div class="carousel-item c-item" data-bs-interval="false">
+                    <img src="./assets/pic-2.jpg" class="d-block w-100 c-img" alt="slide 2">
+                  </div>
+                  <div class="carousel-item c-item" data-bs-interval="false">
+                    <img src="./assets/pic-3.jpg" class="d-block w-100 c-img" alt="slide 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container hero-container">
+          <div class="row hero-row">
+            <div class="col hero-col">
+              <h1 class="h1 text-light title pt-3">Photography For <br/> Adventurous Souls & <br/> Rebels At Heart</h1>
+              <div class="btns">
+                <button class="btn btn-dark">Read More</button>
+                <p class="fs-6 text-light">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    <sectoin class="photo-gallery">
+        <div class="container">
+            <div class="row text-center">
+                <div class="g-col col-xl-4 col-md-6 col-sm-12 col-12 d-flex flex-column img-col">
+                    <div class="image image-1">
+                        <img src="./assets/pic-1.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="image image-2">
+                        <img src="./assets/pic-2.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="g-col col-xl-4 col-md-6 col-sm-12 col-12 d-flex flex-column-reverse img-col">
+                    <div class="image image-1">
+                        <img src="./assets/pic-3.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="image image-2">
+                        <img src="./assets/pic-4.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="g-col col-xl-4 col-md-12 col-sm-12 col-12 d-flex flex-column img-col">
+                    <div class="image image-1">
+                        <img src="./assets/pic-5.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="image image-2">
+                        <img src="./assets/pic-6.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sectoin>
+
+    <div class="modal-container">
+    </div>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 testimonial-col test-left  pb-md-5 pb-sm-5">
+                    <h1 class="title h1">Testimonials</h1>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae aut vitae odio ad nulla ex doloribus temporibus earum iste sed magnam doloremque assumenda, dignissimos voluptatem atque dolorum dicta nisi voluptatibus deserunt rem corrupti officiis. Placeat sapiente deserunt nihil necessitatibus non error, obcaecati dolores qui fugit? Itaque non esse iure.</p>
+                    </div>
+                </div>
+                <div class="col-6 testimonial-col  test-right ">
+                    <div class="image-slider testSlider">
+                        <div id="testimonialSlider" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./assets/pic-1.jpg" class="d-block w-100 t-img" alt="teSlide 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/pic-4.jpg" class="d-block w-100 t-img" alt="teSlide 2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/pic-3.jpg" class="d-block w-100 t-img" alt="teSlide 3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium">
+        <div class="container">
+            <h4 class="h4 fs-6">Lorem ipsum dolor sit amet.</h4>
+            <div class="row pre-row">
+                <div class="col pre-col">
+                    <h1 class="h1 fs-1">Do it your way. Elope in your Dream Location</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="photography.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 4rem 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.nav{
+    width: 100%;
+    padding: 0 10%;
+}
+.navbar{
+    width: 100%;
+    padding: 0;
+}
+.hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.c-item{
+    height: 100vh;
+    position: relative;
+}
+.c-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+.hero-container,
+.hero-container, .hero-row{
+    width: 100%;
+    height: 86%;
+}
+.hero-container .hero-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem 1rem 2rem;
+}
+.hero-col .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-col .btns button:hover{
+    color: orange;
+}
+
+/* photo gallery css */
+.photo-gallery{
+    display: block;
+    padding: 3rem 0;
+}
+.photo-gallery .img-col .image{
+    width: 100%;
+    margin: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+.photo-gallery .img-col .image:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.photo-gallery .img-col .image.image-1{
+    height: 28rem;
+}
+.photo-gallery .img-col .image.image-2{
+    height: 12rem;
+}
+.photo-gallery .img-col .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* modal css */
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.modal-container.show-modal{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-container .modal-image{
+    width: 580px;
+    height: 550px;
+    border-radius: 8px;
+}
+.modal-container .modal-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.modal-container .imgBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: none;
+    /* border-radius: 50%; */
+    background: transparent;
+    color: white;
+}
+.modal-container .imgBtn i{
+    font-size: 2.3rem;
+}
+
+
+/* testimonials css */
+.testimonial-col{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+
+}
+.testimonial-col .title{
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+}
+.testimonial-col .description{
+    font-size: 1.2rem;
+}
+.testimonial-col .testSlider{
+    border-radius: 0.6rem;
+}
+.testimonial-col .testSlider .t-img{
+    border-radius: 0.6rem;
+}
+.testimonial-col.test-left{
+    padding-right: 2rem;
+}
+
+/* premium css */
+.premium{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/pic-5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    color: white;
+}
+.premium h4{
+    color: gray;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.premium .pre-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.premium .pre-row .pre-col{
+    width: 580px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.premium .pre-row .pre-col h1{
+    max-width: 40%;
+    width: 100%;
+    font-size: 4rem;
+}
+
+
+/* media queries css */
+
+@media screen and (min-width: 768px) {
+    header .nav{
+        padding: 0 8%;
+    }
+
+    .hero-container .hero-col{
+        padding: 4.4rem 3rem 2rem;  
+    }
+    .hero-col .title{
+        /* max-width: 60%; */
+        /* font-size: 2.2rem;
+        color: white; */
+    }
+    .hero-col .btns button{
+        padding: 0.6rem 0.8rem;
+        font-size: 1.2rem;
+    }
+    .hero-col .btns p{
+        /* font-size: 1.1rem;
+        color: white; */
+    }
+
+    .modal-container .modal-image{
+        width: 480px;
+        height: 350px;
+    }
+    .modal-container .imgBtn i{
+        font-size: 2rem;
+    }
+
+    /* .testimonial .row{
+        flex-direction: column;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
